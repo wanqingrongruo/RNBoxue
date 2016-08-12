@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A40E18AC60C159BE1EB5BB41DE2180A7DFC9BF9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0A40E18AC60C159BE1EB5BB41DE2180A7DFC9BF9" : 0,
+    "B69EA00F5F131820FF9BA77560B5184570563F17" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ACD5A0C7-6919-43C3-BF66-B4B18F825D7C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0A40E18AC60C159BE1EB5BB41DE2180A7DFC9BF9" : "%E6%B3%8A%E5%AD%A6\/",
+    "B69EA00F5F131820FF9BA77560B5184570563F17" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNBoxue",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RNBoxue\/RNBoxue.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wanqingrongruo\/RNBoxue.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A40E18AC60C159BE1EB5BB41DE2180A7DFC9BF9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ozner-app-ios-org\/HoyoServicer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B69EA00F5F131820FF9BA77560B5184570563F17"
+    }
+  ]
+}
