@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let WIDTH_SCREEN:CGFloat = UIScreen.mainScreen().bounds.size.width  //获取当前屏幕宽度
     let HEIGHT_SCREEN:CGFloat = UIScreen.mainScreen().bounds.size.height  //获取当前屏幕高度
 
+    var im: UIImageView!
     
     var dataSource = ["多线程"]
     var tableView: UITableView!
@@ -84,10 +85,16 @@ extension  ViewController{
         // tableView.separatorStyle = UITableViewCellSeparatorStyle.None
        // tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.rowHeight = 64
+        tableView.contentInset = UIEdgeInsetsMake(-60, 0, 0, 0)
         
       //  tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
         
         view.addSubview(tableView)
+        
+        im = UIImageView(image: UIImage(named: "IMG_0893.JPG"))
+        im.frame = CGRectMake(0, 0, WIDTH_SCREEN, 300)
+        tableView.tableHeaderView = im
+
     }
 
 }

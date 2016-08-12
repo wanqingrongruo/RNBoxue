@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0b-JT-3I2">
-                    <rect key="frame" x="100" y="593" width="79" height="30"/>
+                    <rect key="frame" x="133" y="593" width="79" height="30"/>
                     <state key="normal" title="download"/>
                     <connections>
                         <action selector="downlaodAction:" destination="-1" eventType="touchUpInside" id="lBN-db-WUQ"/>
@@ -48,6 +48,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7U-R8-PVR">
                     <rect key="frame" x="0.0" y="442" width="375" height="120"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-Bd-agp">
+                    <rect key="frame" x="33" y="593" width="45" height="30"/>
+                    <state key="normal" title="cancel"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="d1k-zO-rTB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

@@ -17,6 +17,7 @@
 		E082DF531D5D6616009F743D /* RNMultithreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082DF511D5D6615009F743D /* RNMultithreadViewController.swift */; };
 		E082DF541D5D6616009F743D /* RNMultithreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E082DF521D5D6615009F743D /* RNMultithreadViewController.xib */; };
 		E082DF561D5D687B009F743D /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082DF551D5D687B009F743D /* Downloader.swift */; };
+		E082DF581D5D8EFF009F743D /* IMG_0893.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E082DF571D5D8EFF009F743D /* IMG_0893.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E082DF511D5D6615009F743D /* RNMultithreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMultithreadViewController.swift; sourceTree = "<group>"; };
 		E082DF521D5D6615009F743D /* RNMultithreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNMultithreadViewController.xib; sourceTree = "<group>"; };
 		E082DF551D5D687B009F743D /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		E082DF571D5D8EFF009F743D /* IMG_0893.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0893.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E082DF511D5D6615009F743D /* RNMultithreadViewController.swift */,
 				E082DF521D5D6615009F743D /* RNMultithreadViewController.xib */,
 				E082DF551D5D687B009F743D /* Downloader.swift */,
+				E082DF571D5D8EFF009F743D /* IMG_0893.JPG */,
 				E082DF271D5D62EA009F743D /* Main.storyboard */,
 				E082DF2A1D5D62EA009F743D /* Assets.xcassets */,
 				E082DF2C1D5D62EA009F743D /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 				E082DF2E1D5D62EA009F743D /* LaunchScreen.storyboard in Resources */,
 				E082DF2B1D5D62EA009F743D /* Assets.xcassets in Resources */,
 				E082DF541D5D6616009F743D /* RNMultithreadViewController.xib in Resources */,
+				E082DF581D5D8EFF009F743D /* IMG_0893.JPG in Resources */,
 				E082DF291D5D62EA009F743D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
