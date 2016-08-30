@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RNMultithreadViewController: UIViewController {
     
     // MARK: - properties - 即定义的各种属性
@@ -27,13 +28,27 @@ class RNMultithreadViewController: UIViewController {
     ]
     
     let queue = NSOperationQueue() // operation 队列
-    
+   
+    var _ta:Int = 0
+    var ta: Int{
+        set{
+            _ta = newValue
+        }
+        
+        get{
+            return _ta
+        }
+    }
+  
     // MARK: -  Life cycle - 即生命周期
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "多线程"
+        
+        
+        ta = 100
         
     }
     
@@ -68,6 +83,7 @@ class RNMultithreadViewController: UIViewController {
     }
     
 }
+
 
 // MARK: - Public Methods - 即系统提供的方法
 
@@ -233,7 +249,7 @@ extension  RNMultithreadViewController{
         }
         
         op2.completionBlock = {print("image2 downloaded!")}
-       // queue.addOperation(op2) // 加入队列
+        //queue.addOperation(op2) // 加入队列
         
         
         let op3 = NSBlockOperation {
