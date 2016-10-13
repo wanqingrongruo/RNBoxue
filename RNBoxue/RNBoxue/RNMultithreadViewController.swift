@@ -27,7 +27,7 @@ class RNMultithreadViewController: UIViewController {
         "https://dn-boxueio.qbox.me/image4-big.jpg"
     ]
     
-    let queue = NSOperationQueue() // operation 队列
+    let queue = OperationQueue() // operation 队列
    
     var _ta:Int = 0
     var ta: Int{
@@ -57,22 +57,22 @@ class RNMultithreadViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
     }
@@ -230,19 +230,19 @@ extension  RNMultithreadViewController{
         // NSOperationQueue : 队列,添加到其中的任务会并行执行; 不遵循先进先出原则;不在是一个 closure 而是一个 NSOperation 类(抽象类,不能直接生成对象)
         // 所以 iOS基于 NSOperation 实现了两个具象类 1.NSBlockOperation; 2. NSInvocationOperation(iOS8.1后废除)
 
-        queue.addOperationWithBlock {
-            let img1 =  Downloader.downloadImageWithUrl(self.imageUrls[0])
-            NSOperationQueue.mainQueue().addOperationWithBlock({
+        queue.addOperation {
+            let img1 =  Downloader.downloadImageWithUrl(url: self.imageUrls[0])
+            OperationQueue.main.addOperation({
                 self.imageView01.image = img1
                 self.imageView01.clipsToBounds = true
             })
         }
         
         
-        let op2 = NSBlockOperation {
-            let img2 =  Downloader.downloadImageWithUrl(self.imageUrls[1])
+        let op2 = BlockOperation {
+            let img2 =  Downloader.downloadImageWithUrl(url: self.imageUrls[1])
             
-            NSOperationQueue.mainQueue().addOperationWithBlock({
+            OperationQueue.main.addOperation({
                 self.imageView02.image = img2
                 self.imageView02.clipsToBounds = true
             })
@@ -252,20 +252,20 @@ extension  RNMultithreadViewController{
         //queue.addOperation(op2) // 加入队列
         
         
-        let op3 = NSBlockOperation {
-            let img3 =  Downloader.downloadImageWithUrl(self.imageUrls[2])
+        let op3 = BlockOperation {
+            let img3 =  Downloader.downloadImageWithUrl(url: self.imageUrls[2])
             
-            NSOperationQueue.mainQueue().addOperationWithBlock({
+            OperationQueue.main.addOperation({
                 self.imageView03.image = img3
                 self.imageView03.clipsToBounds = true
             })
         }
-        op3.completionBlock = {print("image3 cancel:\(op3.cancelled)")}
+        op3.completionBlock = {print("image3 cancel:\(op3.isCancelled)")}
       //  queue.addOperation(op3)
-        let op4 = NSBlockOperation {
-            let img4 =  Downloader.downloadImageWithUrl(self.imageUrls[3])
+        let op4 = BlockOperation {
+            let img4 =  Downloader.downloadImageWithUrl(url: self.imageUrls[3])
             
-            NSOperationQueue.mainQueue().addOperationWithBlock({
+            OperationQueue.main.addOperation({
                 self.imageView04.image = img4
                 self.imageView04.clipsToBounds = true
             })
@@ -291,7 +291,7 @@ extension  RNMultithreadViewController{
         self.imageView03.image = nil
         self.imageView04.image = nil
         
-        NSURLCache.sharedURLCache().removeAllCachedResponses()
+        URLCache.shared.removeAllCachedResponses()
     }
     
     

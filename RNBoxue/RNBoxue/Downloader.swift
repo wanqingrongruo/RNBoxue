@@ -15,8 +15,8 @@ class Downloader {
     
     class func downloadImageWithUrl(url: String) -> UIImage! {
         
-        let data = NSData(contentsOfURL: NSURL(string: url)!)
+        let data = NSData(contentsOf: NSURL(string: url)! as URL)
         
-        return UIImage(data: data!)
+        return UIImage(data: data! as Data)
     }
 }
